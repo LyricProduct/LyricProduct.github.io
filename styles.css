@@ -245,6 +245,10 @@ profile-photo .img{
     padding: 0 15px; /* 内側の余白を追加 */
 }
 
+.education-content .container {
+    width: 100%
+}
+
 .education-content .row {
     display: flex;
     flex-direction: column; /* 縦に並べる */
@@ -258,7 +262,7 @@ profile-photo .img{
 .education-content .education,
 .education-content .internship {
     color: #e5e5e5;
-    max-width: 100%; /* 幅を100%に設定 */
+    width: 100%; /* 幅を100%に設定 */
     margin-top: 30px;
 }
 
@@ -278,7 +282,7 @@ profile-photo .img{
     padding: 30px 15px;
     border: 1px solid #e5e5e5;
     border-radius: 10px;
-    margin: 0 15px; /* 両側にマージンを追加 */
+    margin: 0; /* マージンを削除 */
     position: relative;
 }
 
@@ -334,119 +338,116 @@ profile-photo .img{
     text-align: justify;
 }
 
-  
-
-/*---------------------------Projects---------------------------*/
-.project-content{
-  padding: 90px 0;
-  /* color:#fff;  */
-}
-.project-title{
-  margin-bottom: 60px;
-  text-align: center;
-}
-.project-title h4{
-  text-transform: uppercase;
-  font-size: 40px;
-  line-height: 40px;
-  color: #fed700;
-  margin-bottom: 20px;
-}
-.project-title p{
-  color: #e5e5e5;
-}
-.projects{
-  display: flex;
-  justify-content:space-between;
-  flex-wrap: wrap;
-}
-.project{
-    /* padding: 30px 15px; */
-    color: #e5e5e5;
-    border: 2px solid #e5e5e5;
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    padding: 25px;
-    text-align: center;
-    flex-basis: 32%;
-    transition: .3s;
-}
-.project i{
-  background-color: #fed700;
-  width: 60px;
-  height: 60px;
-  color: #333;
-  font-size: 26px;
-  line-height: 60px;
-  border-radius: 50%;
-}
-.project h4{
-  font-size: 26px;
-  text-transform: capitalize;
-  margin: 20px 0;
-}
-.project p{
-  text-align: justify;
-}
-.project:hover{
-  border-color: #fed700;
-}
-
-
-
 /*---------------------------Contact Me---------------------------*/
 .contact-content {
-padding: 100px 0;
-color: #fff;
-text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
 }
 
 .contact-content .contact-title h4 {
-font-size: 40px;
-text-transform: capitalize;
-color: #fed700;
-padding-bottom: 10px;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #fed700;
+    padding-bottom: 10px;
 }
 
 .contact-content .contact-title p {
-padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .contact {
-max-width: 700px;
-margin: auto;
+    max-width: 700px; /* 同じ幅に設定 */
+    margin: auto;
 }
 
 .contact input,
 .contact textarea {
-width: 100%;
-padding: 15px;
-border: 0;
-margin-bottom: 10px;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    margin-bottom: 10px;
 }
 
 .contact .submit {
-width: auto;
-background-color: #fed700;
-padding: 10px 40px;
-font-weight: bold;
-font-size: 18px;
+    width: auto;
+    background-color: #fed700;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .contact .submit:hover {
-transform: scale(1.1);
-cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #msg {
-color: #fff;
-font-size: 20px;
-margin-top: -8px;
-display: block;
+    color: #fff;
+    font-size: 20px;
+    margin-top: -8px;
+    display: block;
 }
 
 
+
+/*---------------------------Projects---------------------------*/
+.project-content{
+    padding: 90px 0;
+    /* color:#fff;  */
+  }
+  .project-title{
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .project-title h4{
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fed700;
+    margin-bottom: 20px;
+  }
+  .project-title p{
+    color: #e5e5e5;
+  }
+  .projects{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+  }
+  .project{
+      /* padding: 30px 15px; */
+      color: #e5e5e5;
+      border: 2px solid #e5e5e5;
+      border-radius: 10px;
+      width: 100%;
+      position: relative;
+      padding: 25px;
+      text-align: center;
+      flex-basis: 32%;
+      transition: .3s;
+  }
+  .project i{
+    background-color: #fed700;
+    width: 60px;
+    height: 60px;
+    color: #333;
+    font-size: 26px;
+    line-height: 60px;
+    border-radius: 50%;
+  }
+  .project h4{
+    font-size: 26px;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+  .project p{
+    text-align: justify;
+  }
+  .project:hover{
+    border-color: #fed700;
+  }
+  
 
 
 
