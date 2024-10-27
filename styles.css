@@ -31,7 +31,7 @@ body{
 
 
 
-      /*---------------------------Header---------------------------*/
+/*---------------------------Header---------------------------*/
 
 .header-area{
   padding:25px 0;
@@ -149,6 +149,8 @@ profile-photo .img{
 .profile-text h1{
   color: #fed700;
   font-size: 3rem; 
+  white-space: normal; /* 通常の折り返しを許可 */
+  line-height: 1.2; /* 行間を調整して重なりを防ぐ */
 }
 .profile-text p{
   color:#e5e5e5;
@@ -237,89 +239,105 @@ profile-photo .img{
 
 /*---------------------------Education & Internship---------------------------*/
 
-.education-content .row{
-  display: flex;
-  border-radius: 5px;
-  height: 400px;
-  margin-bottom: 250px;
+.education-content {
+max-width: 700px; /* Contact Meと同じ幅に設定 */
+margin: 0 auto; /* 中央揃え */
+padding: 0 15px; /* 内側の余白を追加（必要に応じて調整） */
 }
 
-.education-content .title{
-  color: #fed700;
+.education-content .row {
+display: flex;
+border-radius: 5px;
+height: 400px;
+margin-bottom: 250px;
 }
+
+.education-content .title {
+color: #fed700;
+}
+
 .education-content .row .education,
-.education-content .row .internship
-{
-  color: #e5e5e5;
-  flex:0 0 50%;
-  max-width: 50%;
-  margin-top: 30px;
-} 
-.education-content  h3.title{
-  font-size:24px;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-.education-content .row.timeline-box{
-  flex:0 0 100%;
-  max-width: 100%;  
-}
-.education-content .row .timeline{
-  /* background-color:#e5e5e5; */
-  padding: 30px 15px;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  width: 100%;
-  position: relative;
-}
-.education-content .row .timeline-item{
-  position:relative;
-  padding-left: 37px;
-  padding-bottom: 50px; 
-}
-.education-content .row  .internship .timeline-item{
-  position:relative;
-  padding-left: 37px;
-  padding-bottom: 30px; 
-}
-.education-content .row .timeline-item:last-child{
-  padding-bottom: 0;
-}
-.education-content .row .timeline-item::before{
-  content: "";
-  width: 1px;
-  position: absolute;
-  height: 100%;
-  left: 7px;
-  top: 0;
-  background-color: #fed700;  
-}
-.education-content .row .circle-dot{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: #e5e5e5;
-}
-.education-content .row .timeline-title  {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-.education-content .row .internship .timeline-title  {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-.education-content .row .timeline-text{
-  line-height: 25px;
-  font-size: 16px;
-  text-align: justify;
+.education-content .row .internship {
+color: #e5e5e5;
+flex: 0 0 50%;
+max-width: 50%;
+margin-top: 30px;
 }
 
+.education-content h3.title {
+font-size: 24px;
+margin-bottom: 30px;
+font-weight: 700;
+}
 
+.education-content .row.timeline-box {
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.education-content .row .timeline {
+padding: 30px 15px;
+border: 1px solid #e5e5e5;
+border-radius: 10px;
+width: 100%;
+position: relative;
+}
+
+.education-content .row .timeline-item {
+position: relative;
+padding-left: 37px;
+padding-bottom: 50px;
+}
+
+.education-content .row .internship .timeline-item {
+position: relative;
+padding-left: 37px;
+padding-bottom: 30px;
+}
+
+.education-content .row .timeline-item:last-child {
+padding-bottom: 0;
+}
+
+.education-content .row .timeline-item::before {
+content: "";
+width: 1px;
+position: absolute;
+height: 100%;
+left: 7px;
+top: 0;
+background-color: #fed700;
+}
+
+.education-content .row .circle-dot {
+position: absolute;
+left: 0;
+top: 0;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+background-color: #e5e5e5;
+}
+
+.education-content .row .timeline-title {
+font-weight: 700;
+font-size: 18px;
+margin-bottom: 12px;
+}
+
+.education-content .row .internship .timeline-title {
+font-weight: 700;
+font-size: 18px;
+margin-bottom: 8px;
+}
+
+.education-content .row .timeline-text {
+line-height: 25px;
+font-size: 16px;
+text-align: justify;
+}
+
+  
 
 /*---------------------------Projects---------------------------*/
 .project-content{
@@ -381,49 +399,55 @@ profile-photo .img{
 
 
 /*---------------------------Contact Me---------------------------*/
-.contact-content{
-  padding: 100px 0;
-  color: #fff;
-  text-align: center;
-}
-.contact-content .contact-title h4{
-  font-size: 40px;
-  text-transform: capitalize;
-  color: #fed700;
-  padding-bottom: 10px;
-}
-.contact-content .contact-title p{
-  padding-bottom: 20px;
-}
-.contact{
-  max-width: 700px;
-  margin: auto;
-}
-.contact input,.contact textarea{
-  width: 100%;
-  padding: 15px;
-  border: 0;
-  margin-bottom: 10px;
+.contact-content {
+padding: 100px 0;
+color: #fff;
+text-align: center;
 }
 
-.contact .submit{
-  width: auto;
-  background-color: #fed700;
-  padding: 10px 40px;
-  font-weight:bold ;
-  font-size: 18px;
-}
-.contact .submit:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-}
-#msg{
-  color: #fff;
-  font-size: 20px;
-  margin-top: -8px;
-  display: block;
+.contact-content .contact-title h4 {
+font-size: 40px;
+text-transform: capitalize;
+color: #fed700;
+padding-bottom: 10px;
 }
 
+.contact-content .contact-title p {
+padding-bottom: 20px;
+}
+
+.contact {
+max-width: 700px;
+margin: auto;
+}
+
+.contact input,
+.contact textarea {
+width: 100%;
+padding: 15px;
+border: 0;
+margin-bottom: 10px;
+}
+
+.contact .submit {
+width: auto;
+background-color: #fed700;
+padding: 10px 40px;
+font-weight: bold;
+font-size: 18px;
+}
+
+.contact .submit:hover {
+transform: scale(1.1);
+cursor: pointer;
+}
+
+#msg {
+color: #fff;
+font-size: 20px;
+margin-top: -8px;
+display: block;
+}
 
 
 
