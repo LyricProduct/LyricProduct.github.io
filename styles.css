@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* 背景を黒に */
+    color: #fff; /* 文字色を白に */
+}
+
+header {
+    background: #111; /* ヘッダーの背景を暗いグレーに */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00bfff; /* リンクの色を明るい青に */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background: #222; /* セクションの背景をダークグレーに */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    color: #00bfff; /* 見出しの色を明るい青に */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #111; /* フッターの背景を暗いグレーに */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
