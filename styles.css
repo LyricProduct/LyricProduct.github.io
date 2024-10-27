@@ -64,7 +64,7 @@ body{
 }
 
 .logo .fa-bolt {
-  color: #fed700;
+  color: #fe00c7;
   font-size: 19.5px;
   position: absolute; 
   top: 60%;
@@ -95,10 +95,10 @@ body{
   display: block;
 }
 .header ul li a.active{
-  color: #fed700;
+  color: #fe00c7;
 } 
 .header ul li a:hover{
-  color:#fed700;
+  color:#fe00c7;
 }
 .header .menu_icon{
   color:#fff;
@@ -147,7 +147,7 @@ profile-photo .img{
   font-size: 14px;
 }
 .profile-text h1{
-  color: #fed700;
+  color: #fe00c7;
   font-size: 3rem; 
   white-space: normal; /* 通常の折り返しを許可 */
   line-height: 1.2; /* 行間を調整して重なりを防ぐ */
@@ -162,7 +162,7 @@ profile-photo .img{
   transition: 0.5s;
 }
 .profile-text .social i:hover{
-  color:#fed700;
+  color:#fe00c7;
   transform: rotate(360deg);
 }
 
@@ -184,7 +184,7 @@ profile-photo .img{
   flex-basis: 60%;
 }
 .about-content h4{
-  color: #fed700;
+  color: #fe00c7;
   font-size: 40px;
   line-height: 70px;
   text-transform: capitalize;
@@ -233,7 +233,7 @@ profile-photo .img{
   box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 .btn.active{
-  border-color: #fed700;
+  border-color: #fe00c7;
 }
 
 
@@ -256,7 +256,7 @@ profile-photo .img{
 }
 
 .education-content .title {
-    color: #fed700;
+    color: #fe00c7;
 }
 
 .education-content .education,
@@ -307,7 +307,7 @@ profile-photo .img{
     height: 100%;
     left: 7px;
     top: 0;
-    background-color: #fed700;
+    background-color: #fe00c7;
 }
 
 .education-content .circle-dot {
@@ -348,7 +348,7 @@ profile-photo .img{
 .contact-content .contact-title h4 {
     font-size: 40px;
     text-transform: capitalize;
-    color: #fed700;
+    color: #fe00c7;
     padding-bottom: 10px;
 }
 
@@ -371,7 +371,7 @@ profile-photo .img{
 
 .contact .submit {
     width: auto;
-    background-color: #fed700;
+    background-color: #fe00c7;
     padding: 10px 40px;
     font-weight: bold;
     font-size: 18px;
