@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>研究者の自己紹介</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: #333;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-    </style>
+    <title>私のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>研究者の名前</h1>
-        <h2>研究分野</h2>
-        <p>ここに研究内容や自己紹介文を記載します。</p>
-        <h3>連絡先</h3>
-        <p>Email: your.email@example.com</p>
-    </div>
+    <header>
+        <h1>私の名前</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>ここに自己紹介を書く。研究分野や興味について詳しく述べることができます。</p>
+        </section>
+        
+        <section id="projects">
+            <h2>プロジェクト</h2>
+            <ul>
+                <li><a href="https://github.com/username/project1">プロジェクト1</a> - プロジェクトの説明</li>
+                <li><a href="https://github.com/username/project2">プロジェクト2</a> - プロジェクトの説明</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>連絡先</h2>
+            <p>Email: example@example.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/username">リンクをここに</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 私の名前</p>
+    </footer>
 </body>
-
 </html>
