@@ -554,3 +554,27 @@ profile-photo .img{
   }
 
 }
+
+
+/*------------------- News Section -------------------*/
+
+.news-timeline-box.scrollable-news {
+  max-height: 300px; /* 表示高さを調整 */
+  overflow-y: auto;  /* 縦スクロール有効化 */
+  padding-right: 10px;
+}
+
+/* スクロールバーの見た目調整 */
+.news-timeline-box.scrollable-news::-webkit-scrollbar {
+  width: 8px;
+}
+
+.news-timeline-box.scrollable-news::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.news-timeline-box.scrollable-news::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
