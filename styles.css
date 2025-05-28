@@ -558,40 +558,92 @@ profile-photo .img{
 
 /*------------------- News Section -------------------*/
 
-/* ここが重要: スクロールエリアの設定 */
-.news-timeline-container {
-  max-height: 300px;
-  overflow-y: auto;
-  padding-right: 10px; /* スクロールバー分の余白 */
-  border: 1px solid #ddd; /* わかりやすく見た目調整（任意） */
-  margin-top: 10px;
+.news-content {
+  max-width: 700px; /* 他のセクションと同じ幅 */
+  margin: 0 auto; /* 中央揃え */
+  padding: 0 15px; /* 内側の余白 */
 }
 
-/* スクロールバーの見た目調整 */
-.news-timeline-container::-webkit-scrollbar {
-  width: 8px;
-}
-.news-timeline-container::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.3);
-  border-radius: 4px;
-}
-.news-timeline-container::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.1);
+.news-content .container {
+  width: 100%;
 }
 
-/* タイムラインアイテムのスタイルを明示的に */
-.news-timeline-item {
-  margin-bottom: 15px;
+.news-content .row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.news-content .title {
+  color: #fe00c7;
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.news-content .news-timeline-container {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* .news-content .news-timeline {
+  padding: 30px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin: 0;
   position: relative;
-  padding-left: 20px;
+} */
+
+.news-content .news-timeline {
+  padding: 30px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  max-height: 400px; /* 表示する高さを制限（お好みで調整可） */
+  overflow-y: auto; /* 縦スクロールを有効にする */
 }
 
-.circle-dot {
-  width: 10px;
-  height: 10px;
-  background: #333;
-  border-radius: 50%;
+.news-content .news-timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+  color: #e5e5e5;
+
+}
+
+.news-content .news-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.news-content .news-timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #fe00c7;
+}
+
+.news-content .circle-dot {
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
 }
+
+.news-content .news-timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.news-content .news-timeline-text {
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+}
+
