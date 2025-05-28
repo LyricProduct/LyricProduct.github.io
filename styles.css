@@ -558,23 +558,40 @@ profile-photo .img{
 
 /*------------------- News Section -------------------*/
 
-.news-timeline-box.scrollable-news {
-  max-height: 300px; /* 表示高さを調整 */
-  overflow-y: auto;  /* 縦スクロール有効化 */
-  padding-right: 10px;
+/* ここが重要: スクロールエリアの設定 */
+.news-timeline-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px; /* スクロールバー分の余白 */
+  border: 1px solid #ddd; /* わかりやすく見た目調整（任意） */
+  margin-top: 10px;
 }
 
 /* スクロールバーの見た目調整 */
-.news-timeline-box.scrollable-news::-webkit-scrollbar {
+.news-timeline-container::-webkit-scrollbar {
   width: 8px;
 }
-
-.news-timeline-box.scrollable-news::-webkit-scrollbar-thumb {
+.news-timeline-container::-webkit-scrollbar-thumb {
   background: rgba(0,0,0,0.3);
   border-radius: 4px;
 }
-
-.news-timeline-box.scrollable-news::-webkit-scrollbar-track {
+.news-timeline-container::-webkit-scrollbar-track {
   background: rgba(0,0,0,0.1);
 }
 
+/* タイムラインアイテムのスタイルを明示的に */
+.news-timeline-item {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.circle-dot {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
